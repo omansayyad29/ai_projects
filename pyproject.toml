@@ -1,0 +1,23 @@
+[project]
+name = "ai-projects"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Oman", email = "oman@wysbryx.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "bs4>=0.0.2",
+    "dotenv>=0.9.9",
+    "ipython>=9.16.1",
+    "openai>=2.53.0",
+    "tiktoken>=0.13.0",
+]
+
+[project.scripts]
+ai-projects = "ai_projects:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
